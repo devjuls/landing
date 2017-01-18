@@ -1,0 +1,41 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: $container-width;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
