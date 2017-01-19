@@ -1,0 +1,41 @@
+.clients__wrapper {
+  @include container;
+}
+
+.clients__wrapper {
+  @include container;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients__item {
+  width: 43%;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.clients__promo {
+  text-align: center;
+}
+
+
+//responsive
+
+@include tablet {
+
+  .clients__item {
+    max-width: 28%;
+  }
+}
+
+@include desktop {
+
+  .clients__item {
+    max-width: 21%;
+  }
+}

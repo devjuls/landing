@@ -1,3 +1,13 @@
-.socials__list {
+.footer__contacts {
+  @include container;
+  text-align: center;
+}
+
+.socials {
   background-color: $grey;
+}
+
+.socials__list {
+  @include container;
+  text-align: center;
 }

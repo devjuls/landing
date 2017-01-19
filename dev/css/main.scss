@@ -1,10 +1,16 @@
 @import "normalize.css/normalize.css";
 @import "variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
 @import "_global/fonts.scss";
 @import "_global/mixins.scss";
 @import "_global/adjustment.scss";
 @import "_global/typo.scss";
 @import "_global/buttons.scss";
+@import "sections/header.scss";
+@import "sections/services.scss";
+@import "sections/projects.scss";
+@import "sections/features.scss";
+@import "sections/clients.scss";
 @import "sections/footer.scss";
 
 

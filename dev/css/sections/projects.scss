@@ -1,0 +1,12 @@
+.projects__sec-title {
+  text-align: center;
+}
+
+.project__info {
+  @include container;
+}
+
+.projects__link {
+  margin: 0 auto;
+  text-align: center;
+}

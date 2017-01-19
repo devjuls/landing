@@ -1,28 +1,14 @@
 @font-face {
-  font-family: 'Open Sans';
-  src:
-    url('../fonts/opensans/opensanslight.woff') format('woff'),
-    url('../fonts/opensans/opensanslight.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/gilroy/Gilroylight.woff2') format('woff2'), url('Gilroylight.woff') format('woff'), url('Gilroylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Open Sans';
-  src:
-    url('../fonts/opensans/opensans.woff') format('woff'),
-    url('../fonts/opensans/opensans.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src:
-    url('../fonts/opensans/opensansbold.woff') format('woff'),
-    url('../fonts/opensans/opensansbold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroy/Gilroyextrabold.woff2') format('woff2'), url('Gilroyextrabold.woff') format('woff'), url('Gilroyextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
 }
 
 
