@@ -1,0 +1,39 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid transparent;
+  padding: 18px 26px 18px 30px;
+  font-size: 1.57em;
+  line-height: 1;
+  font-weight: 400;
+  transition: color 0.3s, background-color 0.3s;
+
+  &--white {
+    color: #fff;
+    border-color: #fff;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+
+  &--black {
+    color: #000;
+    border-color: #000;
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+
+  &:after {
+    content: "\1F812";
+    display: inline-block;
+    color: inherit;
+    font-size: 50px;
+    line-height: 20px;
+    margin-left: 12px;
+  }
+}

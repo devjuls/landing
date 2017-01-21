@@ -1,0 +1,13 @@
+@keyframes open-slide {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: flex;
+  animation: open-slide 0.5s;
+}

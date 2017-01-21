@@ -1,13 +1,94 @@
+.footer__top {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-color: $grey;
+  background-image: url('./../images/decor/bg6.svg'), url('./../images/decor/bg2.svg'), url('./../images/decor/bg3.svg'), url('./../images/decor/bg4.svg'), url('./../images/decor/bg5.svg'), url('./../images/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 75% 50%, 90% 15%, 92% 80%, 10% 25%, 25% 85%, 50% 0%;
+  background-size: auto, auto, auto, auto, auto, cover;
+}
+
 .footer__contacts {
   @include container;
   text-align: center;
+  font-family: $font-family-title;
+  font-weight: 800;
+}
+
+.footer__promo {
+  font-size: 3.43em;
+  color: #fff;
+  margin-bottom: 95px;
+}
+
+.footer__email a {
+  font-size: 2.14em;
+  color: #fff;
+  margin-bottom: 65px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+
+}
+
+.footer__phone a {
+  font-size: 3.43em;
+  color: #fff;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .socials {
   background-color: $grey;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .socials__list {
   @include container;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__item {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top, #57d781 0%, #25adff 100%);
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+
+  a {
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-color: $grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 0;
+
+    &:hover {
+      background-image: linear-gradient(to top, #57d781 0%, #25adff 100%);
+    }
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

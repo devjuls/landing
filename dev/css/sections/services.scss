@@ -1,5 +1,6 @@
 .services__wrapper {
   @include container;
+  padding-top: 108px;
 }
 
 .section__sec-title {
@@ -37,7 +38,6 @@
 @include tablet {
 
   .services__item {
-    // flex-basis: 48%;
     max-width: 48%;
   }
 }
@@ -45,7 +45,6 @@
 @include desktop {
 
   .services__item {
-    // flex-basis: 30%;
     max-width: 30%;
   }
 }

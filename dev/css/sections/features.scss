@@ -1,5 +1,32 @@
+.features {
+  background-color: #f1f2f2;
+  padding-top: 176px;
+  padding-bottom: 50px;
+}
+
 .features__wrapper {
   @include container;
+}
+
+.features__sec-title {
+  padding-bottom: 100px;
+}
+
+.features__sec-title-text {
+  position: relative;
+  z-index: 10;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -100px;
+    top: -185px;
+    width: 236px;
+    height: 323px;
+    background: url('./../images/icons/6.png') left top no-repeat;
+  }
 }
 
 .features__list {
@@ -11,6 +38,26 @@
 .features__item {
   width: 100%;
   margin-bottom: 80px;
+}
+
+.features__title {
+  font-size: 1.36em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    width: 45px;
+    height: 4px;
+    background-color: $red;
+    margin-right: 18px;
+  }
+}
+
+.features__text {
+  font-size: 1.21em;
+  font-weight: 300;
 }
 
 

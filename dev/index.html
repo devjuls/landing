@@ -58,6 +58,11 @@
         </div> <!-- /header__text  -->
       </div> <!-- /header__promo  -->
 
+      <div class="header__next">
+        <a href="#services" class="header__link">Подробнее</a>
+      </div>
+
+
     </div> <!-- /header__wrapper  -->
   </header>
 
@@ -65,45 +70,60 @@
 <!-- //////////////// section services /////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="services__wrapper">
 
       <h2 class="section__sec-title">Что мы делаем</h2>
 
       <ul class="services__list">
         <li class="services__item">
-          <div class="services__img"></div>
+          <div class="services__img">
+            <img src="images/icons/analitics.png" alt="Аналитика">
+          </div>
           <h3 class="services__title">Аналитика</h3>
           <div class="services__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit obcaecati consequuntur voluptas voluptates repudiandae labore consequatur, non sequi earum.</p>
+            <p>Консалтинг и аудит сайтов. Увеличим конверсию сайта компании, эффективность последующих рекламных кампаний за счет выявления и устранения технических и маркетинговых ошибок.
+            </p>
           </div>
         </li> <!-- /services__item  -->
         <li class="services__item">
-          <div class="services__img"></div>
-          <h3 class="services__title">Аналитика</h3>
+          <div class="services__img">
+            <img src="images/icons/chess.png" alt="Стратегия">
+          </div>
+          <h3 class="services__title">Стратегия</h3>
           <div class="services__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit obcaecati consequuntur voluptas voluptates repudiandae labore consequatur, non sequi earum.</p>
+            <p>Мы объединяем стратегическое мышление с дизайном для создания эффективной коммуникации с вашим брендом в онлайн-среде. Разработаем коммуникационные, медиа- и digital-стратегии. Составим план развития на год вперед.
+            </p>
           </div>
         </li> <!-- /services__item  -->
         <li class="services__item">
-          <div class="services__img"></div>
-          <h3 class="services__title">Аналитика</h3>
+          <div class="services__img">
+            <img src="images/icons/megaphone.png" alt="SMM">
+          </div>
+          <h3 class="services__title">SMM</h3>
           <div class="services__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit obcaecati consequuntur voluptas voluptates repudiandae labore consequatur, non sequi earum.</p>
+            <p>Разрабатываем стратегию присутствия в new медиа, активации в социальных сетях, создаем контент-планы, обеспечиваем коммьюнити-менеджмент, работаем с блогерами, внедряем Social CRM, интегрируем банковский сервис в Facebook.
+            </p>
           </div>
         </li> <!-- /services__item  -->
         <li class="services__item">
-          <div class="services__img"></div>
-          <h3 class="services__title">Аналитика</h3>
+          <div class="services__img">
+            <img src="images/icons/tech.png" alt="Технологии и продакшн">
+          </div>
+          <h3 class="services__title">Технологии и продакшн</h3>
           <div class="services__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit obcaecati consequuntur voluptas voluptates repudiandae labore consequatur, non sequi earum.</p>
+            <p>Проектируем и разрабатываем корпоративные сайты на платформе 1С-Битрикс, мобильные приложения, веб-интерфейсы, в том числе интернет-банкинг и личные кабинеты. Обеспечиваем поддержку 24/7 и дальнейшее развитие вашего интернет-пространства.
+            </p>
           </div>
         </li> <!-- /services__item  -->
         <li class="services__item">
-          <div class="services__img"></div>
+          <div class="services__img">
+            <img src="images/icons/pencil.png" alt="Дизайн">
+          </div>
           <h3 class="services__title">Аналитика</h3>
           <div class="services__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit obcaecati consequuntur voluptas voluptates repudiandae labore consequatur, non sequi earum.</p>
+            <p>Разработка дизайна любого уровня и сложности: адаптивный дизайн, дизайн мобильных приложений, создание UI Framework c возможностью дальнейшей миграции на любые платформы.
+            </p>
           </div>
         </li> <!-- /services__item  -->
       </ul> <!-- /services__list  -->
@@ -117,11 +137,15 @@
 <!-- ///////////////////////////////////////////// -->
 
   <section class="projects">
-    <h2 class="projects__sec-title">Проекты</h2>
+    <h2 class="projects__sec-title">
+      <a href="#projects" class="projects__link">Проекты</a>
+    </h2>
 
-    <ul class="projects__list">
+    <ul class="projects__list" id="projects">
       <li class="projects__item">
-        <div class="projects__img"></div>
+        <div class="projects__img">
+          <img src="images/projects/gazprom.png" alt="Веб-сайт">
+        </div>
         <div class="project__info">
           <h3 class="projects__title">ПАО "Газпром"</h3>
           <ul class="projects__results">
@@ -131,29 +155,37 @@
         </div> <!-- /project__info  -->
       </li> <!-- /projects__item  -->
       <li class="projects__item">
-        <div class="projects__img"></div>
+        <div class="projects__img">
+          <img src="images/projects/tinkoff.png" alt="Веб-сайт">
+        </div>
         <div class="project__info">
-          <h3 class="projects__title">ПАО "Газпром"</h3>
+          <h3 class="projects__title">Тинькофф Банк</h3>
           <ul class="projects__results">
+            <li class="projects__result">Брендинг</li>
+            <li class="projects__result">UI/UX дизайн</li>
+            <li class="projects__result">Разработка мобильного приложения для iOS</li>
             <li class="projects__result">Веб-сайт</li>
           </ul> <!-- /projects__results  -->
           <a href="#" class="btn btn--black">Смотреть проект</a>
         </div> <!-- /project__info  -->
       </li> <!-- /projects__item  -->
       <li class="projects__item">
-        <div class="projects__img"></div>
+        <div class="projects__img">
+          <img src="images/projects/adidas.png" alt="Веб-сайт">
+        </div>
         <div class="project__info">
-          <h3 class="projects__title">ПАО "Газпром"</h3>
+          <h3 class="projects__title">Adidas</h3>
           <ul class="projects__results">
             <li class="projects__result">Веб-сайт</li>
+            <li class="projects__result">Разработка мобильного приложения для iOS, Android и Windows</li>
           </ul> <!-- /projects__results  -->
           <a href="#" class="btn btn--black">Смотреть проект</a>
         </div> <!-- /project__info  -->
       </li> <!-- /projects__item  -->
     </ul> <!-- /projects__list  -->
 
-    <div class="projects__link">
-      <a href="#" class="btn btn--white">Все наши проекты</a>
+    <div class="projects__all-link">
+      <a href="#" class="btn btn--white"><span>Все наши проекты</span></a>
     </div>
 
   </section> <!-- /projects  -->
@@ -167,43 +199,46 @@
 
     <div class="features__wrapper">
 
-      <h2 class="section__sec-title"><span>6</span> причин работать с нами</h2>
+      <h2 class="section__sec-title features__sec-title">
+        <span class="features__sec-title-text"><span class="visuallyhidden">6</span>причин работать с нами</span>
+      </h2>
 
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__title">Профессионализм</h3>
           <div class="features__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quia, atque. Error repudiandae doloribus consequatur, nihil, quas tempore natus asperiores deserunt, obcaecati modi inventore. Eius saepe reiciendis repellat reprehenderit, molestias.</p>
+            <p>Мы нацелены развить ваш бизнес за счет технических решений, а не просто выполнить техническое задание.</p>
           </div> <!-- /features__text  -->
         </li> <!-- /features__item  -->
         <li class="features__item">
-          <h3 class="features__title">Профессионализм</h3>
+          <h3 class="features__title">Актуальность решений</h3>
           <div class="features__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quia, atque. Error repudiandae doloribus consequatur, nihil, quas tempore natus asperiores deserunt, obcaecati modi inventore. Eius saepe reiciendis repellat reprehenderit, molestias.</p>
+            <p>Мы заботимся о том, чтобы ваш продукт оставался актуальным долгие годы, разрабатывая адаптивные и масштабируемые решения.</p>
           </div> <!-- /features__text  -->
         </li> <!-- /features__item  -->
         <li class="features__item">
-          <h3 class="features__title">Профессионализм</h3>
+          <h3 class="features__title">Победы</h3>
           <div class="features__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quia, atque. Error repudiandae doloribus consequatur, nihil, quas tempore natus asperiores deserunt, obcaecati modi inventore. Eius saepe reiciendis repellat reprehenderit, molestias.</p>
+            <p>На нашем счету более 30 призовых мест в российских и международных ведущих отраслевых конкурсах веб-разработки.</p>
           </div> <!-- /features__text  -->
         </li> <!-- /features__item  -->
         <li class="features__item">
-          <h3 class="features__title">Профессионализм</h3>
+          <h3 class="features__title">Прозрачность</h3>
           <div class="features__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quia, atque. Error repudiandae doloribus consequatur, nihil, quas tempore natus asperiores deserunt, obcaecati modi inventore. Eius saepe reiciendis repellat reprehenderit, molestias.</p>
+            <p>Сроки и бюджет разработки открыты и предсказуемы — мы заботимся об этом еще на этапе подписания договора.</p>
           </div> <!-- /features__text  -->
         </li> <!-- /features__item  -->
         <li class="features__item">
-          <h3 class="features__title">Профессионализм</h3>
+          <h3 class="features__title">Опыт работы с highload проектами</h3>
           <div class="features__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quia, atque. Error repudiandae doloribus consequatur, nihil, quas tempore natus asperiores deserunt, obcaecati modi inventore. Eius saepe reiciendis repellat reprehenderit, molestias.</p>
+            <p>Мы разрабатываем веб-сервисы, способные выдерживать высокие нагрузки (до 10000 запросов/сек) и обеспечивать поддержку растущего количества пользователей.
+            </p>
           </div> <!-- /features__text  -->
         </li> <!-- /features__item  -->
         <li class="features__item">
-          <h3 class="features__title">Профессионализм</h3>
+          <h3 class="features__title">Использование fullstack технологий</h3>
           <div class="features__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quia, atque. Error repudiandae doloribus consequatur, nihil, quas tempore natus asperiores deserunt, obcaecati modi inventore. Eius saepe reiciendis repellat reprehenderit, molestias.</p>
+            <p>Мы открыты к новым технологиям, понимаем каждую из них и имеем представление о том, как развить веб-приложение от стадии проектирования до готового продукта.</p>
           </div> <!-- /features__text  -->
         </li> <!-- /features__item  -->
       </ul> <!-- /features__list  -->
@@ -261,27 +296,68 @@
       </ul> <!-- /clients__list  -->
 
       <div class="clients__promo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, placeat.</p>
+        <p>Нам часто говорят: «Это лучше, чем я мог представить». Мы отвечаем, что это просто хорошая работа.</p>
       </div> <!-- /clients__promo  -->
 
       <div class="testimonials">
         <ul class="testimonials__list slider">
-          <li class="testimonials__item slider__item">
-            <div class="testimonials__video"></div>
-            <div class="testimonials__author">Говард Шульц</div>
-            <div class="testimonials__position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, pariatur!</div>
+          <li class="testimonials__item slider__item slider__item--active">
+            <div class="testimonials__video">
+              <video width="980" height="553" controls="controls" poster="images/testimonial.jpg">
+               <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+               <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+               <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+               Тег video не поддерживается вашим браузером.
+              </video>
+            </div> <!-- /testimonials__video  -->
+            <div class="testimonials__info">
+              <div class="testimonials__author">Говард Шульц</div>
+              <div class="testimonials__position">председатель совета директоров, главный управляющий и президент компании Starbucks</div>
+            </div> <!-- /testimonials__info  -->
           </li> <!-- /testimonials__item  -->
           <li class="testimonials__item slider__item">
-            <div class="testimonials__video"></div>
-            <div class="testimonials__author">Говард Шульц</div>
-            <div class="testimonials__position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, pariatur!</div>
+            <div class="testimonials__video">
+              <video width="980" height="553" controls="controls" poster="images/testimonial.jpg">
+               <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+               <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+               <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+               Тег video не поддерживается вашим браузером.
+              </video>
+            </div> <!-- /testimonials__video  -->
+            <div class="testimonials__info">
+              <div class="testimonials__author">Дэвид Хофманн</div>
+              <div class="testimonials__position">председатель совета директоров, главный управляющий и президент компании Starbucks</div>
+            </div> <!-- /testimonials__info  -->
           </li> <!-- /testimonials__item  -->
           <li class="testimonials__item slider__item">
-            <div class="testimonials__video"></div>
-            <div class="testimonials__author">Говард Шульц</div>
-            <div class="testimonials__position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, pariatur!</div>
+            <div class="testimonials__video">
+              <video width="980" height="553" controls="controls" poster="images/testimonial.jpg">
+               <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+               <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+               <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+               Тег video не поддерживается вашим браузером.
+              </video>
+            </div> <!-- /testimonials__video  -->
+            <div class="testimonials__info">
+              <div class="testimonials__author">Ян Вульф</div>
+              <div class="testimonials__position">председатель совета директоров, главный управляющий и президент компании Starbucks</div>
+            </div> <!-- /testimonials__info  -->
           </li> <!-- /testimonials__item  -->
         </ul> <!-- /testimonials__list  -->
+
+        <button class="testimonials__next"><span class="visuallyhidden">Следующий отзыв</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="112.5" viewBox="0 0 27 112.5">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #e6e6e6;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path id="Rectangle_8_copy" data-name="Rectangle 8 copy" class="cls-1" d="M1731.79,7620.4l21,52.99a3,3,0,1,1-5.58,2.21l-21-52.99A3,3,0,1,1,1731.79,7620.4Zm0,108.7,21-52.99a3,3,0,1,0-5.58-2.21l-21,52.99A3,3,0,0,0,1731.79,7729.1Z" transform="translate(-1726 -7618.5)"/>
+          </svg>
+        </button>
       </div> <!-- /testimonials  -->
 
     </div> <!-- /clients__wrapper  -->
@@ -297,9 +373,13 @@
     <div class="footer__top">
 
       <div class="footer__contacts">
-        <span class="footer__promo">Lorem ipsum dolor sit amet.</span>
-        <a href="mailto:hello@iwant.com" class="footer__email">hello@iwant.com</a>
-        <a href="tel:88006009090" class="footer__phone">8 (800) 600 9090</a>
+        <div class="footer__promo">Вы уже хотите пообщаться с нами?</div>
+        <div class="footer__email">
+          <a href="mailto:hello@iwant.com">hello@iwant.com</a>
+        </div>
+        <div class="footer__phone">
+          <a href="tel:88006009090" class="footer__phone">8 (800) 600 9090</a>
+        </div>
       </div> <!-- /footer__contacts  -->
 
     </div> <!-- /footer__top  -->
@@ -311,12 +391,18 @@
           <a href="#"><span class="visuallyhidden">Behance</span>
             <img src="images/icons/behance.png" alt="Behance">
           </a>
+        </li>
+        <li class="socials__item socials__item--dr">
           <a href="#"><span class="visuallyhidden">Dribbble</span>
             <img src="images/icons/dribbble.png" alt="Dribbble">
           </a>
+        </li>
+        <li class="socials__item socials__item--vk">
           <a href="#"><span class="visuallyhidden">Vkontakte</span>
             <img src="images/icons/vk.png" alt="Vkontakte">
           </a>
+        </li>
+        <li class="socials__item socials__item--fb">
           <a href="#"><span class="visuallyhidden">Facebook</span>
             <img src="images/icons/fb.png" alt="Facebook">
           </a>
@@ -331,9 +417,9 @@
 <!-- //////////////// scripts /////////////// -->
 
 <!-- JQuery  -->
-  <!-- <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 
-<!-- <script src="js/main.js"></script> -->
+<script src="js/main.js"></script>
 
 </body>
 </html>

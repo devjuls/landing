@@ -1,9 +1,6 @@
 .clients__wrapper {
   @include container;
-}
-
-.clients__wrapper {
-  @include container;
+  padding-top: 195px;
 }
 
 .clients__list {
@@ -11,6 +8,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .clients__item {
@@ -20,8 +18,97 @@
 }
 
 .clients__promo {
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
+  font-size: 2.43em;
+  font-weight: 300;
+  margin-bottom: 30px;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+    height: 4px;
+    background-color: $red;
+  }
 }
+
+.testimonials {
+  padding-top: 150px;
+  padding-bottom: 170px;
+  background-image: url('./../images/decor/tes1.svg'), url('./../images/decor/tes2.svg'), url('./../images/decor/tes3.svg'), url('./../images/decor/tes4.svg'), url('./../images/decor/tes5.svg');
+  background-repeat: no-repeat;
+  background-position: 5% 0%, 75% 5%, 98% 30%, 10% 90%, 70% 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials__list {
+  width: 95%;
+}
+
+.testimonials__item {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonials__video {
+  flex: 3 1 300px;
+  margin-bottom: 40px;
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.testimonials__info {
+  flex: 1 1 100px;
+  margin-left: 90px;
+  margin-right: 70px;
+  margin-bottom: 40px;
+}
+
+.testimonials__author {
+  font-size: 1.36em;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.testimonials__position {
+  font-size: 1.21em;
+  font-weight: 300;
+}
+
+.testimonials__next {
+  position: relative;
+  background: transparent;
+  width: 27px;
+  height: 113px;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 20px;
+
+  svg path {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    svg path {
+      opacity: 1;
+    }
+  }
+}
+
 
 
 //responsive
