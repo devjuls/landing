@@ -1,6 +1,6 @@
 .clients__wrapper {
   @include container;
-  padding-top: 195px;
+  padding-top: 100px;
 }
 
 .clients__list {
@@ -18,12 +18,17 @@
 }
 
 .clients__promo {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
-  font-size: 2.43em;
+  font-size: 1.8em;
   font-weight: 300;
   margin-bottom: 30px;
+
+  p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   &:before, &:after {
     content: "";
@@ -36,43 +41,27 @@
 }
 
 .testimonials {
-  padding-top: 150px;
-  padding-bottom: 170px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-image: url('./../images/decor/tes1.svg'), url('./../images/decor/tes2.svg'), url('./../images/decor/tes3.svg'), url('./../images/decor/tes4.svg'), url('./../images/decor/tes5.svg');
   background-repeat: no-repeat;
   background-position: 5% 0%, 75% 5%, 98% 30%, 10% 90%, 70% 75%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
 .testimonials__list {
-  width: 95%;
-}
-
-.testimonials__item {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  width: 92%;
 }
 
 .testimonials__video {
-  flex: 3 1 300px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   video {
     max-width: 100%;
     height: auto;
   }
-}
-
-.testimonials__info {
-  flex: 1 1 100px;
-  margin-left: 90px;
-  margin-right: 70px;
-  margin-bottom: 40px;
 }
 
 .testimonials__author {
@@ -115,8 +104,56 @@
 
 @include tablet {
 
+  .clients__wrapper {
+    padding-top: 195px;
+  }
+
   .clients__item {
     max-width: 28%;
+  }
+
+  .clients__promo {
+    font-size: 2.43em;
+    width: 60%;
+
+    p {
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+  }
+
+  .testimonials {
+    padding-top: 150px;
+    padding-bottom: 170px;
+  }
+}
+
+@include laptop {
+
+  .testimonials {
+    align-items: center;
+  }
+
+  .testimonials__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .testimonials__video {
+    width: 70%;
+    margin-bottom: 0;
+
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .testimonials__info {
+    width: 23%;
+    margin-left: 90px;
   }
 }
 

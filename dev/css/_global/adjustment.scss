@@ -14,7 +14,7 @@ body {
   background-color: $bg-color;
 
   @include tablet {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   @include laptop {
@@ -30,13 +30,9 @@ body {
   }
 }
 
-*{
+* {
 	box-sizing: border-box;
 }
-
-// .wrapper {
-// 	min-width: $container-width + 20px;
-// }
 
 li {
 	list-style: none;
@@ -53,11 +49,11 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: normal;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-a:active{
+a:active {
 	outline: none;
 }
 
@@ -77,18 +73,6 @@ img, picture {
   width: 1px;
 }
 
-// .mobile-hidden { //визуально скрыт на мобильных
-//   @include mobile-only {
-//     border: 0;
-//     clip: rect(0 0 0 0);
-//     height: 1px;
-//     margin: -1px;
-//     overflow: hidden;
-//     padding: 0;
-//     position: absolute;
-//     width: 1px;
-//   }
-// }
 
 
 

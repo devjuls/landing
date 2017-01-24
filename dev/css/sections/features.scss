@@ -1,6 +1,6 @@
 .features {
   background-color: #f1f2f2;
-  padding-top: 176px;
+  padding-top: 77px;
   padding-bottom: 50px;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .features__sec-title {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .features__sec-title-text {
@@ -21,11 +21,12 @@
     display: block;
     position: absolute;
     z-index: -1;
-    left: -100px;
-    top: -185px;
-    width: 236px;
-    height: 323px;
+    left: -55px;
+    top: -85px;
+    width: 120px;
+    height: 164px;
     background: url('./../images/icons/6.png') left top no-repeat;
+    background-size: contain;
   }
 }
 
@@ -65,8 +66,30 @@
 
 @include tablet {
 
+  .features {
+    padding-top: 176px;
+  }
+
   .features__item {
     max-width: 48%;
+  }
+
+  .features__sec-title {
+    margin-bottom: 185px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .features__sec-title-text {
+
+    &:before {
+      width: 236px;
+      height: 323px;
+      left: -100px;
+      top: -185px;
+    }
   }
 }
 

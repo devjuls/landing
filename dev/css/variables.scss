@@ -1,10 +1,9 @@
 /*vars*/
 
-$container-width: 300px;
+$container-width: 280px;
 $font-family: 'Roboto', 'Arial', sans-serif;
 $font-family-title: 'Gilroy', 'Times New Roman', serif;
 $font-weight: 300;
-// $font-size: 14px;
 
 /*colors*/
 
@@ -17,8 +16,10 @@ $red: #e74c3c;
 
 
 /* responsive */
+$xs: 480px;
+$sm: 768px;
 $md: 992px;
 $lg: 1200px;
 $xl: 1650px;
-$sm: 768px;
-$xs: 480px;
+
+

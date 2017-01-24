@@ -8,6 +8,10 @@
 }
 
 .slider__item--active {
-  display: flex;
+  display: block;
   animation: open-slide 0.5s;
+
+  @include laptop {
+    display: flex;
+  }
 }

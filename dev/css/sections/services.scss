@@ -1,10 +1,16 @@
+.services {
+  background-image: url('./../images/decor/tes1.svg'), url('./../images/decor/tes2.svg'), url('./../images/decor/tes3.svg'), url('./../images/decor/tes4.svg'), url('./../images/decor/tes5.svg');
+  background-repeat: no-repeat;
+  background-position: 2% 15%, 15% 100%, -5px 70%, 95% 100%, 95% 10%;
+}
+
 .services__wrapper {
   @include container;
   padding-top: 108px;
 }
 
 .section__sec-title {
-  font-size: 3.43em;
+  font-size: 3em;
   font-family: $font-family-title;
   font-weight: 800;
   text-align: center;
@@ -20,6 +26,7 @@
 .services__item {
   width: 100%;
   margin-bottom: 70px;
+  text-align: center;
 }
 
 .services__title {
@@ -30,6 +37,7 @@
 .services__text {
   font-size: 1em;
   font-weight: 300;
+  text-align: left;
 }
 
 
@@ -38,8 +46,15 @@
 @include tablet {
 
   .services__item {
-    max-width: 48%;
+    max-width: 45%;
+    text-align: left;
   }
+
+  .section__sec-title {
+    font-size: 3.43em;
+  }
+
+
 }
 
 @include desktop {

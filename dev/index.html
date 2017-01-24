@@ -19,23 +19,29 @@
 
       <div class="header__top">
 
-        <h1 class="logo">Logotype</h1>
-
         <nav class="nav">
 
+          <div class="nav__wrapper">
+
+            <h1 class="logo">Logotype</h1>
+
+            <button class="nav__toggle" type="button"><span class="visuallyhidden">Открыть меню</span></button>
+
+          </div> <!-- /nav__wrapper  -->
+
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#">О нас</a>
-            </li> <!-- /nav__item  -->
-            <li class="nav__item">
-              <a href="#">Проекты</a>
-            </li> <!-- /nav__item  -->
-            <li class="nav__item">
-              <a href="#">Услуги</a>
-            </li> <!-- /nav__item  -->
-            <li class="nav__item">
-              <a href="#">Контакты</a>
-            </li> <!-- /nav__item  -->
+              <li class="nav__item">
+                <a href="#about">О нас</a>
+              </li> <!-- /nav__item  -->
+              <li class="nav__item">
+                <a href="#projects">Проекты</a>
+              </li> <!-- /nav__item  -->
+              <li class="nav__item">
+                <a href="#services">Услуги</a>
+              </li> <!-- /nav__item  -->
+              <li class="nav__item">
+                <a href="#contacts">Контакты</a>
+              </li> <!-- /nav__item  -->
           </ul> <!-- /nav__list  -->
 
         </nav>
@@ -43,7 +49,7 @@
         <div class="nav__add">
           <a href="tel:88006009090" class="nav__phone">8 (800) 600 9090</a>
           <div class="nav__lang">
-            <a href="#" class="lang__item lang__item--active">Ru</a>
+            <a class="lang__item lang__item--active">Ru</a>
             <a href="#" class="lang__item">En</a>
           </div>
         </div> <!-- /nav__add  -->
@@ -78,7 +84,7 @@
       <ul class="services__list">
         <li class="services__item">
           <div class="services__img">
-            <img src="images/icons/analitics.png" alt="Аналитика">
+            <img src="images/icons/analitics.svg" alt="Аналитика">
           </div>
           <h3 class="services__title">Аналитика</h3>
           <div class="services__text">
@@ -88,7 +94,7 @@
         </li> <!-- /services__item  -->
         <li class="services__item">
           <div class="services__img">
-            <img src="images/icons/chess.png" alt="Стратегия">
+            <img src="images/icons/chess.svg" alt="Стратегия">
           </div>
           <h3 class="services__title">Стратегия</h3>
           <div class="services__text">
@@ -98,7 +104,7 @@
         </li> <!-- /services__item  -->
         <li class="services__item">
           <div class="services__img">
-            <img src="images/icons/megaphone.png" alt="SMM">
+            <img src="images/icons/megaphone.svg" alt="SMM">
           </div>
           <h3 class="services__title">SMM</h3>
           <div class="services__text">
@@ -108,7 +114,7 @@
         </li> <!-- /services__item  -->
         <li class="services__item">
           <div class="services__img">
-            <img src="images/icons/tech.png" alt="Технологии и продакшн">
+            <img src="images/icons/tech.svg" alt="Технологии и продакшн">
           </div>
           <h3 class="services__title">Технологии и продакшн</h3>
           <div class="services__text">
@@ -118,9 +124,9 @@
         </li> <!-- /services__item  -->
         <li class="services__item">
           <div class="services__img">
-            <img src="images/icons/pencil.png" alt="Дизайн">
+            <img src="images/icons/pencil.svg" alt="Дизайн">
           </div>
-          <h3 class="services__title">Аналитика</h3>
+          <h3 class="services__title">Дизайн</h3>
           <div class="services__text">
             <p>Разработка дизайна любого уровня и сложности: адаптивный дизайн, дизайн мобильных приложений, создание UI Framework c возможностью дальнейшей миграции на любые платформы.
             </p>
@@ -136,51 +142,57 @@
 <!-- //////////////// section projects /////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <h2 class="projects__sec-title">
       <a href="#projects" class="projects__link">Проекты</a>
     </h2>
 
     <ul class="projects__list" id="projects">
       <li class="projects__item">
+        <div class="project__info">
+          <div class="project__info-wrap">
+            <h3 class="projects__title">ПАО "Газпром"</h3>
+            <ul class="projects__results">
+              <li class="projects__result">Веб-сайт</li>
+            </ul> <!-- /projects__results  -->
+            <a href="#" class="btn btn--black">Смотреть проект</a>
+          </div> <!-- /project__info-wrap  -->
+        </div> <!-- /project__info  -->
         <div class="projects__img">
           <img src="images/projects/gazprom.png" alt="Веб-сайт">
         </div>
-        <div class="project__info">
-          <h3 class="projects__title">ПАО "Газпром"</h3>
-          <ul class="projects__results">
-            <li class="projects__result">Веб-сайт</li>
-          </ul> <!-- /projects__results  -->
-          <a href="#" class="btn btn--black">Смотреть проект</a>
-        </div> <!-- /project__info  -->
       </li> <!-- /projects__item  -->
       <li class="projects__item">
+        <div class="project__info">
+          <div class="project__info-wrap">
+            <h3 class="projects__title">Тинькофф Банк</h3>
+            <ul class="projects__results">
+              <li class="projects__result">Брендинг</li>
+              <li class="projects__result">UI/UX дизайн</li>
+              <li class="projects__result">Разработка мобильного приложения для iOS</li>
+              <li class="projects__result">Веб-сайт</li>
+            </ul> <!-- /projects__results  -->
+            <a href="#" class="btn btn--black">Смотреть проект</a>
+          </div> <!-- /project__info-wrap  -->
+        </div> <!-- /project__info  -->
         <div class="projects__img">
-          <img src="images/projects/tinkoff.png" alt="Веб-сайт">
+          <img src="images/projects/phone.png" alt="Веб-сайт">
         </div>
-        <div class="project__info">
-          <h3 class="projects__title">Тинькофф Банк</h3>
-          <ul class="projects__results">
-            <li class="projects__result">Брендинг</li>
-            <li class="projects__result">UI/UX дизайн</li>
-            <li class="projects__result">Разработка мобильного приложения для iOS</li>
-            <li class="projects__result">Веб-сайт</li>
-          </ul> <!-- /projects__results  -->
-          <a href="#" class="btn btn--black">Смотреть проект</a>
-        </div> <!-- /project__info  -->
       </li> <!-- /projects__item  -->
       <li class="projects__item">
+        <div class="project__info">
+          <div class="project__info-wrap">
+            <h3 class="projects__title">Adidas</h3>
+            <ul class="projects__results">
+              <li class="projects__result">Веб-сайт</li>
+              <li class="projects__result">Разработка мобильного приложения для iOS, Android и Windows</li>
+            </ul> <!-- /projects__results  -->
+            <a href="#" class="btn btn--black">Смотреть проект</a>
+          </div> <!-- /project__info-wrap  -->
+        </div> <!-- /project__info  -->
         <div class="projects__img">
           <img src="images/projects/adidas.png" alt="Веб-сайт">
         </div>
-        <div class="project__info">
-          <h3 class="projects__title">Adidas</h3>
-          <ul class="projects__results">
-            <li class="projects__result">Веб-сайт</li>
-            <li class="projects__result">Разработка мобильного приложения для iOS, Android и Windows</li>
-          </ul> <!-- /projects__results  -->
-          <a href="#" class="btn btn--black">Смотреть проект</a>
-        </div> <!-- /project__info  -->
       </li> <!-- /projects__item  -->
     </ul> <!-- /projects__list  -->
 
@@ -195,12 +207,12 @@
 <!-- //////////////// section features /////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-  <section class="features">
+  <section class="features" id="about">
 
     <div class="features__wrapper">
 
       <h2 class="section__sec-title features__sec-title">
-        <span class="features__sec-title-text"><span class="visuallyhidden">6</span>причин работать с нами</span>
+        <span class="features__sec-title-text"><span class="visuallyhidden">6</span>причин <br>работать с нами</span>
       </h2>
 
       <ul class="features__list">
@@ -251,7 +263,7 @@
 <!-- //////////////// section clients //////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-  <section class="clients">
+  <section class="clients" id="clients">
     <div class="clients__wrapper">
 
     <h2 class="section__sec-title">Наши клиенты</h2>
@@ -304,9 +316,7 @@
           <li class="testimonials__item slider__item slider__item--active">
             <div class="testimonials__video">
               <video width="980" height="553" controls="controls" poster="images/testimonial.jpg">
-               <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
-               <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-               <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+               <source src="images/video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                Тег video не поддерживается вашим браузером.
               </video>
             </div> <!-- /testimonials__video  -->
@@ -318,9 +328,7 @@
           <li class="testimonials__item slider__item">
             <div class="testimonials__video">
               <video width="980" height="553" controls="controls" poster="images/testimonial.jpg">
-               <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
-               <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-               <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+               <source src="images/video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                Тег video не поддерживается вашим браузером.
               </video>
             </div> <!-- /testimonials__video  -->
@@ -332,9 +340,7 @@
           <li class="testimonials__item slider__item">
             <div class="testimonials__video">
               <video width="980" height="553" controls="controls" poster="images/testimonial.jpg">
-               <source src="video/1.ogv" type='video/ogg; codecs="theora, vorbis"'>
-               <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-               <source src="video/1.webm" type='video/webm; codecs="vp8, vorbis"'>
+               <source src="images/video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                Тег video не поддерживается вашим браузером.
               </video>
             </div> <!-- /testimonials__video  -->
@@ -368,7 +374,7 @@
 <!-- //////////////// footer ///////////////////// -->
 <!-- ///////////////////////////////////////////// -->
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
 
     <div class="footer__top">
 
@@ -412,6 +418,7 @@
     </div> <!-- /socials  -->
 
   </footer>
+
 
 
 <!-- //////////////// scripts /////////////// -->

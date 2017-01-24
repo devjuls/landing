@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
   (function() {
-    $('.header__link, .projects__link').on('click', function(e){
+    $('.nav__item a, .header__link, .projects__link').on('click', function(e){
       var ancor = $(this).attr('href'),
           topLink = $(ancor).offset().top;
 

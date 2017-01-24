@@ -1,6 +1,6 @@
 .footer__top {
-  padding-top: 135px;
-  padding-bottom: 135px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-color: $grey;
   background-image: url('./../images/decor/bg6.svg'), url('./../images/decor/bg2.svg'), url('./../images/decor/bg3.svg'), url('./../images/decor/bg4.svg'), url('./../images/decor/bg5.svg'), url('./../images/footer-bg.jpg');
   background-repeat: no-repeat;
@@ -16,9 +16,10 @@
 }
 
 .footer__promo {
-  font-size: 3.43em;
+  font-size: 3em;
+  line-height: 1.4;
   color: #fff;
-  margin-bottom: 95px;
+  margin-bottom: 60px;
 }
 
 .footer__email a {
@@ -27,19 +28,17 @@
   margin-bottom: 65px;
   transition: opacity 0.3s;
 
-  &:hover {
+  &:hover, &:active {
     opacity: 0.5;
   }
-
-
 }
 
 .footer__phone a {
-  font-size: 3.43em;
+  font-size: 3em;
   color: #fff;
   transition: opacity 0.3s;
 
-  &:hover {
+  &:hover, &:active {
     opacity: 0.5;
   }
 }
@@ -54,23 +53,24 @@
   @include container;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .socials__item {
-  width: 74px;
-  height: 74px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-image: linear-gradient(to top, #57d781 0%, #25adff 100%);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   position: relative;
 
   a {
     display: block;
-    width: 68px;
-    height: 68px;
+    width: 54px;
+    height: 54px;
     background-color: $grey;
     border-radius: 50%;
     position: absolute;
@@ -78,7 +78,7 @@
     left: 3px;
     z-index: 0;
 
-    &:hover {
+    &:hover, &:active {
       background-image: linear-gradient(to top, #57d781 0%, #25adff 100%);
     }
   }
@@ -90,5 +90,39 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+
+//responsive
+
+@include tablet {
+
+  .footer__top {
+    padding-top: 135px;
+    padding-bottom: 135px;
+  }
+
+  .footer__promo {
+    font-size: 3.43em;
+    margin-bottom: 95px;
+  }
+
+  .footer__phone a {
+    font-size: 3.43em;
+  }
+
+  .socials__item {
+    width: 74px;
+    height: 74px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    a {
+      width: 68px;
+      height: 68px;
+      top: 3px;
+      left: 3px;
+    }
   }
 }
